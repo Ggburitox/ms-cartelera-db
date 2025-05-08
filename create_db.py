@@ -2,9 +2,11 @@ import mysql.connector
 
 conn = mysql.connector.connect(
     host="localhost",
+    port=8008,
     user="root",
     password="rootpass"
 )
+
 
 cursor = conn.cursor()
 cursor.execute("CREATE DATABASE IF NOT EXISTS cartelera;")
